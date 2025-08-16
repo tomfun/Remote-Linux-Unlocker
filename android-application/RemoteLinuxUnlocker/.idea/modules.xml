@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RemoteLinuxUnlocker.iml" filepath="$PROJECT_DIR$/RemoteLinuxUnlocker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RemoteLinuxUnlocker.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-application.RemoteLinuxUnlocker.iml" filepath="$PROJECT_DIR$/.idea/modules/android-application.RemoteLinuxUnlocker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

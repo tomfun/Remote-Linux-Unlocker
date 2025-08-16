@@ -26,3 +26,10 @@ $ sudo systemctl start unlocker-daemon
 $ ./remote-linux-pair
 ```
 
+# DEV
+
+Create python virtual env ...
+```bash
+source .venv/bin/activate
+pip install "poetry==2.1.3"
+```

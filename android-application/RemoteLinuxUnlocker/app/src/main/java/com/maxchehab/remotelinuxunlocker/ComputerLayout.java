@@ -1,7 +1,7 @@
 package com.maxchehab.remotelinuxunlocker;
 
 import android.content.Context;
-import android.support.v7.widget.CardView;
+import androidx.cardview.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +10,10 @@ import android.widget.TextView;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
@@ -84,7 +88,7 @@ public class ComputerLayout extends CardView{
     private void status(String ip, String key){
         String echoResponse = null;
         try {
-            echoResponse = new Client(ip,61599,"{\"command\":\"status\",\"key\":\"" +  key + "\"}").execute().get(2, TimeUnit.SECONDS);
+            echoResponse = new Client(ip,61599,"{\"command\":\"status\",\"key\":\"" +  key + "\"}").execute().get(20, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.maxchehab.remotelinuxunlocker">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,16 +13,17 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ComputerListActivity"
-            android:label="Remote Linux Unlocker">
+            android:label="Remote Linux Unlocker"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PairingActivity" />
+        <activity android:name=".PairingActivity" android:exported="false" />
 
-        <activity android:name=".LockComputer" android:label="Lock My Computer">
+        <activity android:name=".LockComputer" android:label="Lock My Computer" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -31,7 +31,7 @@
         </activity>
 
 
-        <activity android:name=".UnlockComputer" android:label="Unlock My Computer">
+        <activity android:name=".UnlockComputer" android:label="Unlock My Computer" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
